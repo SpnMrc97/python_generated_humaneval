@@ -19,7 +19,3 @@ def find_zero(xs: list, initial_guess: float = 0.0, tolerance: float = 1e-7, max
             raise ValueError("Derivative is zero. No solution found.")
         x -= fx / f_prime_x
     raise ValueError("Maximum iterations exceeded. No solution found.")
-
-# Example usage:
-print(round(find_zero([1, 2]), 2))  # Should return -0.5
-print(round(find_zero([-6, 11, -6, 1]), 2))  # Should return 1.0
